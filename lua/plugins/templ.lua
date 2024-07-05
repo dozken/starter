@@ -4,7 +4,7 @@ return {
     opts = { ensure_installed = { "go", "templ" } },
   },
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = { ensure_installed = { "gopls", "templ", "html-lsp", "htmx-lsp", "tailwindcss-language-server" } },
   },
   {

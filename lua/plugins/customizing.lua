@@ -9,7 +9,7 @@ return {
     opts = { use_diagnostic_signs = true },
   },
   {
-    "echasnovski/mini.icons",
+    "nvim-mini/mini.icons",
     opts = {
       extension = {
         templ = { glyph = "", hl = "MiniIconsOrange" },
