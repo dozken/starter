@@ -5,10 +5,6 @@ return {
     opts = { transparent_background = true },
   },
   {
-    "folke/trouble.nvim",
-    opts = { use_diagnostic_signs = true },
-  },
-  {
     "nvim-mini/mini.icons",
     opts = {
       extension = {

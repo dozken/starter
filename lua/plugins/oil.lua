@@ -3,7 +3,7 @@ return {
   cmd = "Oil",
   keys = {
     { "-", "<cmd>Oil<cr>", desc = "Open Oil" },
-    { "<leader>-", "<cmd>:lua require('oil').toggle_float()<cr>", desc = "Open Oil in float" },
+    { "<leader>-", "<cmd>lua require('oil').toggle_float()<cr>", desc = "Open Oil in float" },
   },
   opts = {
     keymaps = {

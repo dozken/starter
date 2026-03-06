@@ -4,16 +4,20 @@ return {
     keys = { { "<leader>fu", "<cmd>UndotreeToggle<cr>", mode = "n", desc = "File Undotree" } },
   },
   {
-    "ThePrimeagen/git-worktree.nvim",
+    "polarmutex/git-worktree.nvim",
     keys = {
       {
         "<leader>gw",
-        "<CMD>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>",
+        function()
+          require("telescope").extensions.git_worktree.git_worktrees()
+        end,
         desc = "Git Worktree list",
       },
       {
         "<leader>gW",
-        "<CMD>lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>",
+        function()
+          require("telescope").extensions.git_worktree.create_git_worktree()
+        end,
         desc = "Git Worktree Create",
       },
     },

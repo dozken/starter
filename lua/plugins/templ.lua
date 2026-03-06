@@ -1,15 +1,15 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = { ensure_installed = { "go", "templ" } },
+    opts = { ensure_installed = { "templ" } },
   },
   {
     "mason-org/mason.nvim",
-    opts = { ensure_installed = { "gopls", "templ", "html-lsp", "htmx-lsp", "tailwindcss-language-server" } },
+    opts = { ensure_installed = { "templ", "html-lsp", "htmx-lsp" } },
   },
   {
     "stevearc/conform.nvim",
-    opts = { formatters_by_ft = { templ = { "html", "templ" } } },
+    opts = { formatters_by_ft = { templ = { "templ" } } },
   },
   {
     "neovim/nvim-lspconfig",
@@ -19,7 +19,7 @@ return {
         html = { filetypes = { "html", "templ" } },
         htmx = { filetypes = { "html", "templ" } },
         tailwindcss = {
-          filetypes = { "templ", "astro", "javascript", "typescript", "react" },
+          filetypes_include = { "templ" },
           settings = { tailwindCSS = { includeLanguages = { templ = "html" } } },
         },
       },
